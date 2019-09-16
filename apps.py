@@ -73,6 +73,7 @@ def main() :
 	for listIamProject in iamProject:
 		for i in iamProject[listIamProject]:
 			if "service_accounts" in i:
+				
 				for serviceshash in iamProject[listIamProject]['service_accounts']:
 					for x in iamProject[listIamProject]['service_accounts'][serviceshash]:
 						slack_notif += "\n-----[+] Name : " + str(iamProject[listIamProject]['service_accounts'][serviceshash]['display_name'])
