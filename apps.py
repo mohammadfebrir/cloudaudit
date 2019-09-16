@@ -75,9 +75,9 @@ def main() :
 			if "service_accounts" in i:
 				for serviceshash in iamProject[listIamProject]['service_accounts']:
 					for x in iamProject[listIamProject]['service_accounts'][serviceshash]:
-						slack_notif += "\n-----[+] Email : " + str(iamProject[listIamProject]['service_accounts'][serviceshash]['display_name'])
+						slack_notif += "\n-----[+] Name : " + str(iamProject[listIamProject]['service_accounts'][serviceshash]['display_name'])
 						slack_notif += "\n-----[+] Email : " + str(iamProject[listIamProject]['service_accounts'][serviceshash]['email'])
-						slack_notif += "\n-----[+] Email : " + str(iamProject[listIamProject]['service_accounts'][serviceshash]['keys'])
+						slack_notif += "\n-----[+] Keys : " + str(iamProject[listIamProject]['service_accounts'][serviceshash]['keys'])
 					break
 			else:
 				print ("Nothing Services Account Object ")
