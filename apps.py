@@ -4,11 +4,11 @@ import json
 import requests
 from pprint import pprint
 
-JSON_FILE_NAME = "/home/febriramadlan/cloudaudit/scoutsuite-report/scoutsuite-results/file-cloud.json"
-
+JSON_FILE_NAME = "scoutsuite-report/scoutsuite-results/file-cloud.json"
 def isReadFile(path):
 	with open (path) as jsonfile:
-		return json.load(jsonfile)
+		data = jsonfile.read().split("scoutsuite_results =")
+		return json.loads(data[1])
 
 
 def sendNotifToSlack(message):
