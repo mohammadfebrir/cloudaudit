@@ -4,7 +4,7 @@ import json
 import requests
 from pprint import pprint
 
-JSON_FILE_NAME = "/home/febriramadlan/ScoutSuite/scoutsuite-report/scoutsuite-results/file-cloud.json"
+JSON_FILE_NAME = "/home/febriramadlan/cloudaudit/scoutsuite-report/scoutsuite-results/file-cloud.json"
 
 def isReadFile(path):
 	with open (path) as jsonfile:

@@ -1,0 +1,7 @@
+#* * * * * rm /home/febriramadlan/ScoutSuite/scoutsuite-report/scoutsuite-results/*
+#* * * * * python3 /home/febriramadlan/ScoutSuite/scout.py gcp --user-account
+#* * * * * cp /home/febriramadlan/cloudaudit/apps.py /home/febriramadlan/ScoutSuite/scoutsuite-report/scoutsuite-results/
+#* * * * * cl
+
+
+
